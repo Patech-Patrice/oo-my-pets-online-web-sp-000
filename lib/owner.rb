@@ -61,12 +61,7 @@ class Owner
     end
   end
   
- def sell_pets
-     self.pets.each_key do |critter|
-       make_critters_mood(critter, "nervous")
-     end
-     self.pets_init
-   end
+ 
 
   def list_pets
      "I have #{pets[:fishes].size} fish, #{pets[:dogs].size} dog(s), and #{pets[:cats].size} cat(s)."
