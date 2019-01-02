@@ -61,7 +61,13 @@ class Owner
     end
   end
   
+ def sell_pets
+     change_mood(:dogs, "nervous")
+     change_mood(:fishes, "nervous")
+     change_mood(:cats, "nervous")
+     @pets = {}
 
+   end
 
   def list_pets
      "I have #{pets[:fishes].size} fish, #{pets[:dogs].size} dog(s), and #{pets[:cats].size} cat(s)."
