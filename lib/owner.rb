@@ -61,7 +61,14 @@ class Owner
     end
   end
   
- 
+ def sell_pets
+     pets.each do |species, companions|
+       companions.each do |companion|
+         companion.mood = 'nervous'
+       end
+       companions.clear
+     end
+   end
 
   def list_pets
      "I have #{pets[:fishes].size} fish, #{pets[:dogs].size} dog(s), and #{pets[:cats].size} cat(s)."
