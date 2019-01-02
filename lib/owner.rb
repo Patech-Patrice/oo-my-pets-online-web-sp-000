@@ -1,4 +1,4 @@
-require 'pry'
+
  class Owner	 class Owner
    attr_accessor :pets, :count, :name
    attr_reader :species
